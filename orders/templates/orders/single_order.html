@@ -25,7 +25,7 @@
                 <h4>Titre du produit : <span>{{order.first_product_title}}</span></h4>
                 <h4>Site e-commerce concerné : <span>{{order.marketplace}}</span></h4>
                 <h4>Statut de la commande sur {{order.marketplace}} : <span>{{order.order_status_marketplace}}</span></h4>
-                <h4>Statut de la commande sur lengow : <span>{{order.order_status_lengow}}</span></h4>
+                <h4>Statut de la commande sur Lengow : <span>{{order.order_status_lengow}}</span></h4>
                 <h4>Date d'achat : <span>{{order.order_purchase_date}}</span></h4>
                 <h4>Email de facturation : <span>{{order.billing_email}}</span></h4>
                 <h4>Adresse de livraison : <span>{{order.delivery_full_address}}</span></h4>
@@ -33,7 +33,7 @@
                 <h4>Date de dernière mise à jour : <span>{{order.update_time}}</span></h4>
                 <div class="down-content">
                   <div class="categories">
-                    <h6>Catégories: <span><a href="{% url 'orders:search' %}?query={{order.first_product_category}}">{{order.first_product_category}}</a></span></h6>
+                    <h6>Catégorie: <span><a href="{% url 'orders:search' %}?query={{order.first_product_category}}">{{order.first_product_category}}</a></span></h6>
                   </div>
                 </div>
               </div>
