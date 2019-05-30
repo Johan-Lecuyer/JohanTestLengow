@@ -1,0 +1,46 @@
+
+{% load static %}
+<!-- Subscribe Form Starts Here -->
+<div>
+        <br>
+        <br>
+        <br>
+</div>
+<div class="subscribe-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h1>Recherchez une commande :</h1>
+          </div>
+        </div>
+        <div class="col-md-8 offset-md-2">
+          <div class="main-content">
+            <p>La recherche se fait au niveau de l'order id, du statut de la commande, du titre et de la catégorie.</p>
+            <div class="container">
+              <form id="subscribe" action="{% url 'orders:search' %}" method="get">
+                    {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-7">
+                    <fieldset>
+                      <input name="query" type="text" class="form-control" id="email" 
+                      onfocus="if(this.value == 'Votre recherche...') { this.value = ''; }" 
+                      onBlur="if(this.value == '') { this.value = 'Votre recherche...';}"
+                      value="Votre recherche..." required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-md-5">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button">Recherchez maintenant!</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Subscribe Form Ends Here -->

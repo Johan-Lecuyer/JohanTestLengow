@@ -1,0 +1,47 @@
+    <!-- Page Content -->
+    <!-- Single Starts Here -->
+    <div class="single-product">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <div class="line-dec"></div>
+                <h1>Commande numéro : {{order.order_id}}</h1>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="product-slider">
+                <div id="slider" class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="{{order.first_product_url_image}}" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-content">
+                <h4>Titre du produit : <span>{{order.first_product_title}}</span></h4>
+                <h4>Site e-commerce concerné : <span>{{order.marketplace}}</span></h4>
+                <h4>Status de la commande sur {{order.marketplace}} : <span>{{order.order_status_marketplace}}</span></h4>
+                <h4>Status de la commande sur lengow : <span>{{order.order_status_lengow}}</span></h4>
+                <h4>Date d'achat : <span>{{order.order_purchase_date}}</span></h4>
+                <h4>Email de facturation : <span>{{order.billing_email}}</span></h4>
+                <h4>Adresse de livraison : <span>{{order.delivery_full_address}}</span></h4>
+                <h4>Date d'enregistrement : <span>{{order.registery_time}}</span></h4>
+                <h4>Date de dernière mise à jour : <span>{{order.update_time}}</span></h4>
+                <div class="down-content">
+                  <div class="categories">
+                    <h6>Categories: <span><a href="{% url 'orders:search' %}?query={{order.first_product_category}}">{{order.first_product_category}}</a></span></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Single Page Ends Here -->
+  
+  
+  

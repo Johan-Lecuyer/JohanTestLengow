@@ -1,0 +1,4 @@
+env/
+johan_test_lengow/__pycache__
+orders/__pycache__/
+orders/migrations/__pycache__/
