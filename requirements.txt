@@ -1,5 +1,5 @@
 ﻿dj-database-url==0.5.0
-Django==2.2.4
+Django==2.2.8
 django-debug-toolbar==1.11
 djangorestframework==3.9.4
 entrypoints==0.3
